@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.NaghshKhan" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#6D4AFF</item>
+        <item name="colorPrimaryVariant">#4D2BC2</item>
+        <item name="colorSecondary">#FFB84D</item>
+        <item name="android:statusBarColor">#17152B</item>
+        <item name="android:navigationBarColor">#17152B</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
