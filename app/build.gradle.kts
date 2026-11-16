@@ -1,10 +1,10 @@
 
-
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
 }
+
 android {
     namespace = "ir.naghshkhan.studio"
     compileSdk = 35
@@ -17,13 +17,18 @@ android {
         versionName = "1.0.0"
     }
 
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
     buildFeatures {
         compose = true
     }
+}
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = "2.0.21"
-    }
+kotlinOptions {
+    jvmTarget = "17"
 }
 
 dependencies {
@@ -33,5 +38,5 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.3.1")
     implementation("androidx.compose.ui:ui-tooling-preview:1.7.6")
     debugImplementation("androidx.compose.ui:ui-tooling")
-implementation("com.google.android.material:material:1.12.0")
+    implementation("com.google.android.material:material:1.12.0")
 }
